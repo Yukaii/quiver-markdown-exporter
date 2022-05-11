@@ -119,8 +119,8 @@ export function convertNoteToMarkdown (note: string): { title: string, content: 
     title: meta.title,
     content: `${tags}${cellsToMarkdown}
 
-    Created At: ${formatTime(meta.created_at)}
-    Updated At: ${formatTime(meta.updated_at)}
+    Created At: ${formatTime(meta.created_at * 1000)}
+    Updated At: ${formatTime(meta.updated_at * 1000)}
   `
   }
 }
