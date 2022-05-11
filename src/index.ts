@@ -9,7 +9,7 @@ const cli = meow(`
 	  --output, -o Output folder
 
 	Examples
-	  $ quiver-markdown src/index.qvlibrary -o dist
+	  $ quiver-markdown MyLibrary.qvlibrary -o dist
 `, {
   importMeta: import.meta,
   flags: {
