@@ -1,5 +1,7 @@
 # Quiver Markdown exporter
 
+![npm](https://img.shields.io/npm/v/quiver-markdown-exporter)
+
 * Data format Reference: https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format
 
 ## Installation
