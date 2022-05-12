@@ -6,6 +6,11 @@
 
 TBD
 
+## TODOs
+
+- [ ] Fix ts build
+- [ ] Release to npm
+
 ## Usage
 
 ```
