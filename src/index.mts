@@ -1,5 +1,6 @@
+#!/usr/bin/env node
 import meow from 'meow';
-import { convert } from './quiver-markdown';
+import { convert } from './quiver-markdown.mjs';
 
 const cli = meow(`
 	Usage
@@ -20,7 +21,7 @@ const cli = meow(`
   },
 });
 
-if (cli.input.length !== 1) {
+if (cli.input.length < 1) {
   console.error('Please provide a qvlibrary file');
   process.exit(1);
 }

@@ -2,24 +2,26 @@
   "name": "quiver-markdown",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "bin": {
-    "quiver-markdown": "dist/index.js"
+    "quiver-markdown": "dist/index.mjs"
   },
   "scripts": {
     "build": "tsc",
-    "dev": "yarn build && node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/fs-extra": "^9.0.13",
     "@types/node": "^17.0.32",
     "@types/turndown": "^5.0.1",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.8.0-dev.20220512"
   },
   "dependencies": {
     "fast-glob": "^3.2.11",
