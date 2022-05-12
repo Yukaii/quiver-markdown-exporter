@@ -4,22 +4,19 @@
 
 ## Installation
 
-TBD
-
-## TODOs
-
-- [ ] Fix ts build
-- [ ] Release to npm
+```bash
+npm install -g quiver-markdown-exporter
+```
 
 ## Usage
 
 ```
-	Usage
-	  $ quiver-markdown <input.qvlibrary> -o <output folder>
+Usage
+	$ quiver-markdown <input.qvlibrary> -o <output folder>
 
-	Options
-	  --output, -o Output folder
+Options
+	--output, -o Output folder
 
-	Examples
-	  $ quiver-markdown MyLibrary.qvlibrary -o dist
+Examples
+	$ quiver-markdown MyLibrary.qvlibrary -o dist
 ```

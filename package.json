@@ -1,7 +1,7 @@
 {
-  "name": "quiver-markdown",
+  "name": "quiver-markdown-exporter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Export Quiver library to Obsidian markdown files",
   "main": "dist/index.mjs",
   "files": [
     "dist"
