@@ -34,12 +34,12 @@ export function convert (qvlibrary: string, outputPath: string) {
       return (
         node.nodeName === 'IMG' &&
         node.getAttribute('src') &&
-        node.getAttribute('src').startsWith('quiver-file-url/')
+        node.getAttribute('src').startsWith('quiver-image-url/')
       )
     },
     replacement: function (content, node: HTMLImageElement, options) {
       const src = node.getAttribute('src')
-      const fileName = src.replace('quiver-file-url/', '')
+      const fileName = src.replace('quiver-image-url/', '')
 
       return `![[${fileName}]]`
     }
@@ -92,6 +92,16 @@ const formatTime = (timestamp: number) => {
   return date.toLocaleString()
 }
 
+function processMarkdownImage (markdown: string) {
+  return markdown.replaceAll(/(?:__|[*#])|\[(.*?)\]\((.*?)\)/g, (match, p1, p2) => {
+    if (p2?.startsWith('quiver-image-url/')) {
+      return `[[${p2.replace('quiver-image-url/', '')}]]`
+    } else {
+      return match
+    }
+  })
+}
+
 export function convertNoteToMarkdown (note: string): { title: string, content: string } {
   const meta = JSON.parse(fs.readFileSync(path.join(note, 'meta.json'), 'utf8'))
   const content = JSON.parse(fs.readFileSync(path.join(note, 'content.json'), 'utf8'))
@@ -105,7 +115,7 @@ export function convertNoteToMarkdown (note: string): { title: string, content: 
       case 'code':
         return `\`\`\`${cell.language}\n${cell.data}\n\`\`\``
       case 'markdown':
-        return cell.data
+        return processMarkdownImage(cell.data)
       case 'diagram':
         return `\`\`\`${cell.diagramType}\n${cell.data}\n\`\`\``
       case 'latex':
