@@ -4,7 +4,7 @@
 
 A [Quiver](https://yliansoft.com/) markdown note exporter. I started to use Quiver around 2015 and 2016. But I quickly get back to Evernote. Recently I found [Obsidian](https://obsidian.md/) quite useful and migrated all of my notes to it. So I write this exporter to migrate my notes from Quiver to Obsidian.
 
-And my Quiver notes only use a subset of Quiver features, so I can't guarantee that the exported notes are exactly the same as the ones in Quiver. But I hope it's enough for you to get started.
+And my Quiver notes only use a subset of Quiver features, so I can't guarantee that the exported notes are the same as the ones in Quiver. But I hope it's enough for you to get started.
 
 Some working features:
 
@@ -33,9 +33,9 @@ Examples
 
 ## Contributing
 
-If you find any bug or have any suggestion, simply fork this repo and modify on your own. I would probably not gonna run this repo again. 😝
+If you find any bugs or have any suggestions, simply fork this repo and modify it on your own. I would probably not gonna run this repo again. 😝
 
-Also checkout the [Quiver Data format Reference](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format).
+Also check out the [Quiver Data format Reference](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format).
 
 ## License
 
