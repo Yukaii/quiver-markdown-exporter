@@ -1,4 +1,12 @@
-# Quiver Library Markdown exporter to Obsidian
+# Quiver Library Markdown exporter to Obsidian [Unmaintained]
+
+
+> [!WARNING]
+> Please checkout [blue-monk](https://github.com/blue-monk)'s [fork](https://github.com/blue-monk/quiver-to-obsidian-exporter) instead!
+>
+> https://github.com/blue-monk/quiver-to-obsidian-exporter
+
+---
 
 ![npm](https://img.shields.io/npm/v/quiver-markdown-exporter)
 
